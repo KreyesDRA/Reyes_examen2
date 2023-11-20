@@ -1,0 +1,28 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Mantenimiento";
+}
+
+<h2>Mantenimiento</h2>
+
+<form action="/web/Guardar" method="post">
+    <label for="equipo">Equipo:</label>
+    <input type="text" id="equipo" name="equipo" required />
+
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required />
+
+    <label for="reparacion">Reparación:</label>
+    <input type="text" id="reparacion" name="reparacion" required />
+
+    <label for="detalle">Detalle:</label>
+    <input type="text" id="detalle" name="detalle" required />
+
+    <label for="asignacion">Asignación:</label>
+    <input type="text" id="asignacion" name="asignacion" required />
+
+    <label for="tecnico">Técnico:</label>
+    <input type="text" id="tecnico" name="tecnico" required />
+
+    <input type="submit" value="Guardar" />
+</form>
